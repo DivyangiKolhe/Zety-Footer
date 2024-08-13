@@ -1,0 +1,113 @@
+.footer-section {
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  padding: 2rem;
+  background-color: #07142B; /* Updated to match the provided color */
+  color: #fff;
+}
+
+.footer-top {
+  margin-bottom: 1rem;
+  color: #6a737d;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Distribute space between left and links */
+  align-items: flex-start; /* Align items to the top */
+  margin-top: 2rem;
+}
+
+.footer-left {
+  max-width: 25%;
+}
+
+.footer-logo {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+  margin-bottom: 1rem;
+}
+
+.create-resume-button {
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.footer-social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-social-links a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer-social-links a:hover {
+  color: #1da1f2;
+}
+
+.footer-contact {
+  margin-top: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem; /* Add some space between the left content and links */
+  flex: 1;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 10rem; /* Ensures each column has a minimum width */
+}
+
+.footer-column h4 {
+  margin-bottom: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  color: #1da1f2;
+}
+
+.footer-bottom {
+  margin-top: 1rem; /* Adds space between links and bottom text */
+  text-align: center;
+  font-size: 0.8rem;
+  color: #6a737d;
+}
+
+.footer-bottom p {
+  margin: 0;
+}

@@ -1,0 +1,147 @@
+/* EditorialGuidelines.css */
+
+body {
+  font-family: 'Roboto', sans-serif; /* Modern, clean font */
+  color: #333; /* Darker text color for readability */
+  line-height: 1.6; /* Improved line height for readability */
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5; /* Light grey background for a modern feel */
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column; /* Stacks cards vertically */
+  gap: 30px; /* Increased space between cards */
+  width: 90%; /* Adjusted width for better responsiveness */
+  max-width: 1000px; /* Increased maximum width for a spacious feel */
+  margin: 0 auto; /* Centers the content horizontally */
+  padding: 30px; /* Added padding for a spacious feel */
+  background-color: #ffffff; /* Clean white background for the main container */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border-radius: 12px; /* Rounded corners for a softer look */
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0; /* Light border color for subtle definition */
+  border-radius: 12px; /* Consistent rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  padding: 30px; /* Generous padding inside cards */
+  margin: 0; /* Remove default margin */
+  transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s; /* Smooth transitions */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  background-color: #f5f5f5; /* Subtle background color change on hover */
+}
+
+.card-with-bg {
+  background-color: #4a148c; /* Deep purple background for contrast */
+  color: #ffffff; /* White text for readability */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for prominence */
+}
+
+.card-title {
+  font-size: 1.75em; /* Larger font size for titles */
+  margin-top: 0;
+  font-weight: 700; /* Bold titles for emphasis */
+  margin-bottom: 15px; /* Space below titles */
+  color: #ffffff; /* Ensure text stands out on dark background */
+}
+
+.card-text {
+  margin: 15px 0; /* Increased margin for better spacing */
+  color: #666; /* Subtle text color */
+}
+
+.blue-text {
+  color: #0056b3; /* Professional blue color for links and accents */
+}
+
+.quality-lifecycle-image {
+  width: 100%; /* Full width for responsiveness */
+  max-width: 650px; /* Maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 30px; /* Increased space above the image */
+  border-radius: 8px; /* Rounded corners for images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+  transition: transform 0.3s; /* Smooth zoom effect */
+}
+
+.quality-lifecycle-image:hover {
+  transform: scale(1.03); /* Slight zoom effect on hover */
+}
+
+.quality-lifecycle-list {
+  margin: 30px 0; /* Increased margin for better spacing */
+  padding-left: 30px; /* More indentation for list items */
+  list-style-type: decimal; /* Numbered list style */
+}
+
+.quality-lifecycle-list li {
+  margin-bottom: 25px; /* Increased space between list items */
+}
+
+.publication-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: disc; /* Disc style for list items */
+}
+
+.publication-list li {
+  margin-bottom: 15px; /* Space between list items */
+}
+
+.blue-link {
+  color: #0056b3; /* Professional blue color for links */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: 500; /* Slightly bold for emphasis */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.blue-link:hover {
+  text-decoration: underline; /* Underline on hover for better interaction */
+  color: #003d7a; /* Darker blue color on hover */
+}
+
+.heading-logos-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between heading and logos */
+  flex-wrap: wrap; /* Allow wrapping if there's not enough space */
+  padding: 20px 0; /* Padding for top and bottom */
+}
+
+.heading-logos-container h2 {
+  margin: 0; /* Remove margin for consistent alignment */
+  font-size: 1.5em; /* Adjust font size for heading */
+  font-weight: 600; /* Slightly bold for emphasis */
+  color: #333; /* Dark text color for readability */
+}
+
+.logo-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow logos to wrap if there's not enough space */
+  gap: 20px; /* Space between logos */
+  justify-content: center; /* Center logos within the container */
+  width: 100%; /* Full width of the container */
+}
+
+.logo-container img {
+  height: 50px; /* Adjust height for logos */
+  width: auto; /* Maintain aspect ratio */
+  max-width: 120px; /* Ensure logos don’t exceed this width */
+  cursor: pointer;
+  transition: transform 0.3s, filter 0.3s, opacity 0.3s; /* Smooth transition effects */
+  border-radius: 8px; /* Rounded corners for logos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for logos */
+}
+
+.logo-container img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  filter: brightness(1.2); /* Increase brightness on hover */
+  opacity: 0.9; /* Slight fade effect on hover */
+}

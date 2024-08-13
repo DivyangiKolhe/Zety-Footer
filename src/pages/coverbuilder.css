@@ -1,0 +1,100 @@
+.coverbuilder-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+  }
+  
+  .coverbuilder-content {
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .coverbuilder-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .coverbuilder-left {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .coverbuilder-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .coverbuilder-left h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .coverbuilder-left p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .coverbuilder-left button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .coverbuilder-right img,
+  .full-width-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .steps-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .step {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .step img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .step h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .step p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  /* Button section */
+  .button-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .button-section button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  

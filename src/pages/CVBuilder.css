@@ -1,0 +1,351 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Main Container */
+.main-container {
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  padding: 50px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.main-content-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.right-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.cta-button {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 8px;
+}
+
+.cta-button:hover {
+  background: #c0392b;
+}
+
+
+.new-section {
+  text-align: center;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* Add space between the steps */
+  flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.step {
+  flex: 1; /* Allow steps to grow and shrink equally */
+  max-width: 200px; /* Optional: limit the width of each step */
+  text-align: left;
+  margin: 10px; /* Optional: add margin around each step */
+}
+
+.step img {
+  width: 100%; /* Ensure images scale within the step container */
+  max-width: 180px; /* Set a maximum width for images */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.step:hover img {
+  transform: scale(1.1); /* Slightly enlarge image on hover */
+}
+
+.step:hover {
+  transform: translateY(-10px);
+}
+
+.template-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.slick-slider {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.template-card {
+  position: relative;
+  width: 70%;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.template-card:hover {
+  transform: scale(1.05);
+}
+
+.template-image {
+  width: 80%;
+  height: auto;
+}
+
+.template-info {
+  padding: 10px;
+}
+
+.use-template-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  padding: 10px 20px;
+  background-color: #074485;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.template-card:hover .use-template-button {
+  display: block;
+}
+
+.customer-section {
+  background: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 20px auto;
+  flex-wrap: wrap;
+}
+
+.logo-container img {
+  max-width: 100px; /* Set a maximum width for the logos */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px; /* Optional: add margin around each logo */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.logo-container img:hover {
+  transform: scale(1.1); /* Slightly enlarge image on hover */
+}
+
+
+.reviews-section {
+  background: #f9f9f9;
+  padding: 50px 0;
+}
+
+.review-cards {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.trial-section {
+  background: #ecf0f1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.create-cv-button {
+  background: #e67e22;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 8px;
+}
+
+.create-cv-button:hover {
+  background: #d35400;
+}
+
+/* New Sections */
+.info-section,
+.info-section-alt,
+.info-section1,
+.info-section-alt1,
+.info-section2,
+.info-section-alter {
+  background: #fff;
+  padding: 50px 0;
+}
+
+.info-content,
+.info-content-alt,
+.info-content1,
+.info-content-alt1,
+.info-content2,
+.info-content-alter {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.left-info-section,
+.left-info-section-alt,
+.left-info-section1,
+.left-info-section-alt1,
+.left-info-section2,
+.left-info-section-alter {
+  flex: 1;
+  padding: 20px;
+}
+
+.right-info-section,
+.right-info-section-alt,
+.right-info-section1,
+.right-info-section-alt1,
+.right-info-section2,
+.right-info-section-alter {
+  flex: 1;
+  padding: 20px;
+}
+
+.bold-text,
+.bold-text-alt,
+.bold-text-alt1,
+.bold-text-alter {
+  font-weight: bold;
+}
+
+.review-section {
+  display: flex;
+  justify-content: space-between; /* Optional: Adjusts space between cards */
+  gap: 20px; /* Optional: Adjusts gap between cards */
+}
+
+.review-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1; /* Adjusts the width of the cards */
+}
+
+.review-text {
+  margin-bottom: 15px;
+}
+
+.review-logo {
+  width: 100px; /* Adjust as needed */
+  height: auto;
+}
+
+
+.testimonial-section {
+  background: #34d6ec;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  background: #ecf0f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.testimonial-author {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.transform-section {
+  background: #e9f4fc;
+  padding: 50px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.transform-button {
+  background: #1d1db6;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 8px;
+}
+
+.transform-button:hover {
+  background: #6011fe;
+}

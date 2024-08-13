@@ -1,0 +1,19 @@
+.cover-letter-container {
+  padding: 20px;
+}
+
+.cover-letter-content {
+  width: 100%;
+  text-align: left; /* Ensure text within cover letter sections is aligned to the left */
+}
+
+.cover-letter-container h1,
+.cover-letter-container h2,
+.cover-letter-container h3,
+.cover-letter-container h4,
+.cover-letter-container h5,
+.cover-letter-container h6,
+.cover-letter-container p,
+.cover-letter-container div {
+  text-align: left; /* Ensure headings and divs within cover letter sections are aligned to the left */
+}
