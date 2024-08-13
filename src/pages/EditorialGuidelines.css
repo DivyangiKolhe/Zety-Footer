@@ -1,147 +1,124 @@
-/* EditorialGuidelines.css */
-
+/* Overall Styling */
 body {
   font-family: 'Roboto', sans-serif; /* Modern, clean font */
   color: #333; /* Darker text color for readability */
   line-height: 1.6; /* Improved line height for readability */
   margin: 0;
   padding: 0;
-  background-color: #f0f2f5; /* Light grey background for a modern feel */
+  background-color: #f4f7f9; /* Lighter grey background for a modern feel */
 }
 
+/* Main Container */
 .main-content {
-  display: flex;
-  flex-direction: column; /* Stacks cards vertically */
-  gap: 30px; /* Increased space between cards */
-  width: 90%; /* Adjusted width for better responsiveness */
-  max-width: 1000px; /* Increased maximum width for a spacious feel */
-  margin: 0 auto; /* Centers the content horizontally */
-  padding: 30px; /* Added padding for a spacious feel */
-  background-color: #ffffff; /* Clean white background for the main container */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  border-radius: 12px; /* Rounded corners for a softer look */
+  width: 90%; /* Increase width for better responsiveness */
+  max-width: 1200px; /* Maximum width for spacious feel */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 40px 30px; /* Padding for spacious feel */
+  background-color: #ffffff; /* Clean white background */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 10px; /* Rounded corners */
 }
 
-.card {
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0; /* Light border color for subtle definition */
-  border-radius: 12px; /* Consistent rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  padding: 30px; /* Generous padding inside cards */
-  margin: 0; /* Remove default margin */
-  transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s; /* Smooth transitions */
+/* Section Styling */
+.section {
+  margin-bottom: 50px; /* Space between sections */
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
-  transform: translateY(-5px); /* Slight lift effect on hover */
-  background-color: #f5f5f5; /* Subtle background color change on hover */
+/* Section Titles */
+.section-title {
+  font-size: 2.5em; /* Larger font size for emphasis */
+  font-weight: 700; /* Bold title */
+  color: #222; /* Darker text color for contrast */
+  margin-bottom: 20px; /* Space below the title */
+  border-bottom: 2px solid #0056b3; /* Underline effect */
+  padding-bottom: 10px; /* Padding below the title */
 }
 
-.card-with-bg {
-  background-color: #4a148c; /* Deep purple background for contrast */
-  color: #ffffff; /* White text for readability */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for prominence */
+/* Section Text */
+.section-text {
+  margin-bottom: 20px; /* Space between paragraphs */
+  color: #555; /* Slightly lighter text color for readability */
+  line-height: 1.8; /* Increased line height */
 }
 
-.card-title {
-  font-size: 1.75em; /* Larger font size for titles */
-  margin-top: 0;
-  font-weight: 700; /* Bold titles for emphasis */
-  margin-bottom: 15px; /* Space below titles */
-  color: #ffffff; /* Ensure text stands out on dark background */
-}
-
-.card-text {
-  margin: 15px 0; /* Increased margin for better spacing */
-  color: #666; /* Subtle text color */
-}
-
+/* Highlighted Text */
 .blue-text {
-  color: #0056b3; /* Professional blue color for links and accents */
+  color: #0056b3; /* Professional blue color */
 }
 
+/* Image Styling */
 .quality-lifecycle-image {
   width: 100%; /* Full width for responsiveness */
-  max-width: 650px; /* Maximum width of the image */
+  max-width: 700px; /* Adjusted max width for better fit */
   height: auto; /* Maintain aspect ratio */
-  margin-top: 30px; /* Increased space above the image */
-  border-radius: 8px; /* Rounded corners for images */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
-  transition: transform 0.3s; /* Smooth zoom effect */
+  margin: 30px auto; /* Center image and add space */
+  border-radius: 10px; /* Rounded corners for images */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
 }
 
-.quality-lifecycle-image:hover {
-  transform: scale(1.03); /* Slight zoom effect on hover */
+/* Lists */
+.quality-lifecycle-list, .publication-list {
+  margin: 30px 0; /* Space between lists and content */
+  padding-left: 20px; /* Indentation for list items */
+  list-style-type: none; /* Remove default list styles */
 }
 
-.quality-lifecycle-list {
-  margin: 30px 0; /* Increased margin for better spacing */
-  padding-left: 30px; /* More indentation for list items */
-  list-style-type: decimal; /* Numbered list style */
+.quality-lifecycle-list li, .publication-list li {
+  margin-bottom: 20px; /* Space between list items */
+  position: relative; /* Position for custom list styling */
 }
 
-.quality-lifecycle-list li {
-  margin-bottom: 25px; /* Increased space between list items */
+.quality-lifecycle-list li::before {
+  content: '•'; /* Custom bullet point */
+  color: #0056b3; /* Bullet color */
+  position: absolute;
+  left: -20px; /* Position bullet */
 }
 
-.publication-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: disc; /* Disc style for list items */
-}
-
-.publication-list li {
-  margin-bottom: 15px; /* Space between list items */
-}
-
+/* Links */
 .blue-link {
   color: #0056b3; /* Professional blue color for links */
   text-decoration: none; /* Remove underline from links */
   font-weight: 500; /* Slightly bold for emphasis */
-  transition: color 0.3s; /* Smooth color transition */
+  transition: color 0.3s, text-decoration 0.3s; /* Smooth transitions */
 }
 
 .blue-link:hover {
-  text-decoration: underline; /* Underline on hover for better interaction */
+  text-decoration: underline; /* Underline on hover */
   color: #003d7a; /* Darker blue color on hover */
 }
 
+/* Logos Section */
 .heading-logos-container {
-  display: flex;
-  align-items: center;
-  gap: 20px; /* Space between heading and logos */
-  flex-wrap: wrap; /* Allow wrapping if there's not enough space */
-  padding: 20px 0; /* Padding for top and bottom */
+  text-align: center; /* Center align the text */
+  padding: 40px 0; /* Padding for top and bottom */
 }
 
 .heading-logos-container h2 {
-  margin: 0; /* Remove margin for consistent alignment */
-  font-size: 1.5em; /* Adjust font size for heading */
+  font-size: 2em; /* Adjust font size for heading */
   font-weight: 600; /* Slightly bold for emphasis */
-  color: #333; /* Dark text color for readability */
+  color: #222; /* Dark text color for readability */
+  margin-bottom: 30px; /* Space below heading */
 }
 
+/* Logo Container */
 .logo-container {
   display: flex;
-  flex-wrap: wrap; /* Allow logos to wrap if there's not enough space */
-  gap: 20px; /* Space between logos */
+  flex-wrap: wrap; /* Allow logos to wrap */
+  gap: 30px; /* Space between logos */
   justify-content: center; /* Center logos within the container */
   width: 100%; /* Full width of the container */
 }
 
 .logo-container img {
-  height: 50px; /* Adjust height for logos */
-  width: auto; /* Maintain aspect ratio */
-  max-width: 120px; /* Ensure logos don’t exceed this width */
-  cursor: pointer;
-  transition: transform 0.3s, filter 0.3s, opacity 0.3s; /* Smooth transition effects */
+  height: 60px; /* Set a consistent height for logos */
+  max-width: 100%; /* Ensure logos do not exceed the container width */
+  object-fit: contain; /* Maintain aspect ratio */
   border-radius: 8px; /* Rounded corners for logos */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for logos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for logos */
+  transition: transform 0.3s; /* Smooth hover effect */
 }
 
 .logo-container img:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
-  filter: brightness(1.2); /* Increase brightness on hover */
-  opacity: 0.9; /* Slight fade effect on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }

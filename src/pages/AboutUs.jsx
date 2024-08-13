@@ -30,7 +30,10 @@ const AboutUs = () => {
 
             events.forEach(event => {
                 const eventPosition = event.offsetTop;
-                if (scrollPosition > eventPosition) {
+                const eventHeight = event.offsetHeight;
+                const eventBottom = eventPosition + eventHeight;
+
+                if (scrollPosition > eventPosition && scrollPosition < eventBottom) {
                     event.classList.add('active');
                 } else {
                     event.classList.remove('active');
@@ -44,6 +47,8 @@ const AboutUs = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+
     const scrollRef = useRef(null);
 
     useEffect(() => {
@@ -108,11 +113,12 @@ const AboutUs = () => {
                     <p>From resume and interview advice to networking, our guides have been recognized by over 200 universities and organizations worldwide.
 
                     </p>
+                    <h2>Company Timeline </h2>
+
                 </div>
             </div>
             {/* Timeline Section */}
             <div className="timeline">
-                <h3>Company Timeline </h3>
                 <div className="timeline-line" id="timelineLine"></div>
                 <div className="timeline-event">
                     <div className="timeline-date">05.2014</div>
@@ -215,7 +221,10 @@ const AboutUs = () => {
                         { name: "Caio Sampaio, CPRW", title: "Certified Professional Resume Writer (CPRW)", description: "Caio is a career and professional development specialist with 4 years of experience. He holds a professional resume writing certification." },
                         { name: "Christian Eilers, CPRW", title: "Certified Professional Résumé Writer, Career Expert", description: "Christian is a career expert and Certified Professional Resume Writer. His guides cover every aspect of the job-hunting process." },
                         { name: "Danuta Detyna, CPRW", title: "Writer, Certified Professional Résumé Writer", description: "Danuta Detyna is a writer and career expert. As an empathetic writer with over seven years of experience, she focuses on delivering real, actionable advice that you can use to boost your career." },
-                        { name: "Dominika Kowalska, CPRW", title: "Editor, Certified Professional Résumé Writer", description: "Dominika Kowalska is a career expert and Certified Professional Resume Writer (CPRW) who’s spent the last 5 years helping people develop their careers." }
+                        { name: "Dominika Kowalska, CPRW", title: "Editor, Certified Professional Résumé Writer", description: "Dominika Kowalska is a career expert and Certified Professional Resume Writer (CPRW) who’s spent the last 5 years helping people develop their careers." },
+                        { name: "Emilia Mucha, CPRW", title: "Writer, Career Expert", description: "Emilia is a career expert and a job-hunting advisor. Her articles are informative and engaging, providing readers with practical tips and strategies for creating job-winning resumes and cover letters and navigating the job market with confidence." },
+                         { name: "EMPTY Adam Joyce,Writer", title: "Career Expert", description: "Adam is an enthusiastic career expert dedicated to providing job-seekers with resume building and job hunting advice. He draws on his extensive employment history to write content that is informed and which can be actionable in real life." }
+                        
                     ].map(member => (
                         <div className="team-member" key={member.name}>
                             <h4>{member.name}</h4>

@@ -89,6 +89,10 @@ body {
   opacity: 1;
 }
 
+.Text2-banner {
+  padding-top: 60px; /* Add padding to create space above this section */
+
+}
 /* Team Section */
 .team-section {
   margin-top: 50px;
@@ -129,6 +133,9 @@ body {
   color: #7f8c8d;
   line-height: 1.4;
 }
+.team-member h5 {
+  color: blue;
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -137,14 +144,18 @@ body {
   }
 }
 
-/* Timeline Section */
 .timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 40px 20px; /* Padding inside the timeline section */
   text-align: center;
+  background-color: #f9f9f9; /* Optional: Background color for visual separation */
+  border-top: 2px solid #ddd; /* Optional: Border-top for visual separation */
+  border-bottom: 2px solid #ddd; /* Optional: Border-bottom for visual separation */
+  margin-bottom: 60px; /* Add margin to create space below the timeline */
 }
+
 
 .timeline-line {
   position: absolute;
